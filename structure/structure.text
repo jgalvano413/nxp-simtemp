@@ -1,0 +1,28 @@
+nxp-simtemp/                 ← carpeta raíz del proyecto
+│
+├── kernel/                  ← driver en C
+│   ├── src/
+│   │   └── nxp_simtemp.c    ← código del módulo del kernel
+│   └── Makefile             ← Makefile para compilar el módulo
+│
+├── userspace/               ← programas de espacio de usuario
+│   └── cli.py               ← CLI en Python para leer/configurar
+│
+├── gui/                     ← GUI opcional
+│   └── gui.py               ← GUI (ejemplo con Tkinter en Python)
+│
+├── scripts/                 ← scripts de ayuda
+│   ├── build.sh             ← compilar el módulo
+│   ├── insmod.sh            ← insertar el módulo
+│   ├── rmmod.sh             ← remover el módulo
+│   └── demo.sh              ← demo end-to-end (build + load + CLI)
+│
+├── dt/                      ← device tree
+│   └── nxp-simtemp.dts      ← ejemplo de nodo para DT overlay
+│
+├── docs/                    ← documentación
+│   ├── DESIGN.md            ← notas de diseño
+│   └── API.md               ← API para user space
+│
+├── README.md                ← instrucciones principales
+└── .gitignore               ← ignorar builds, __pycache__, etc.
