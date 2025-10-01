@@ -1,5 +1,5 @@
 # nxp-simtemp
-Este proyecto implementa un **driver de Linux** que simula un sensor de temperatura y lo expone a espacio de usuario mediante un **char device**, eventos pollables y atributos en **sysfs**.  
+Este proyecto implementa un **driver de Linux** que simula un sensor de temperatura y lo expone a espacio de usuario mediante un **char device** y atributos en **sysfs**.  
 Incluye además un **CLI en Python** y una **GUI opcional** para configurar y leer el dispositivo.
 
 <!-- ---
